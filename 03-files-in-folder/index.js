@@ -8,7 +8,7 @@ fs.readdir(path.join(__dirname, 'secret-folder'), (err, files) => {
         const baseName = path.basename(file, path.extname(file));
         const extName = path.extname(file).slice(1);
         const size = stats.size;
-        console.log( `${baseName} - ${extName} - ${size}kb`);
+        console.log( `${baseName} - ${extName} - ${size} byte`);
       }
     });
   }
